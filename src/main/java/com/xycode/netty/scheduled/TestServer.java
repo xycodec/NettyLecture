@@ -19,7 +19,7 @@ public class TestServer {
 		EventLoopGroup workerGroup=new NioEventLoopGroup();//实际的业务处理
 		//ServerBootstrap是netty启动类,封装了netty的一些配置信息
 		ServerBootstrap serverBootstrap=new ServerBootstrap();
-		serverBootstrap.group(bossGroup,workerGroup)
+		serverBootstrap.group(bossGroup,workerGroup)  
 		.channel(NioServerSocketChannel.class)//反射构建,处理bossGroup的业务
 		.childHandler(//应对workerGroup的业务处理
 				new ChannelInitializer<SocketChannel>() {

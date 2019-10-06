@@ -18,7 +18,7 @@ public class ScheduledTaskClient {
         EventLoopGroup clientGroup=new NioEventLoopGroup();
         //Bootstrap是netty启动类,封装了netty的一些配置信息
         Bootstrap bootstrap=new Bootstrap();
-        bootstrap.group(clientGroup)
+        bootstrap.group(clientGroup)  
                 .channel(NioSocketChannel.class)
                 .handler(new ChannelInitializer<SocketChannel>() {
                     @Override
