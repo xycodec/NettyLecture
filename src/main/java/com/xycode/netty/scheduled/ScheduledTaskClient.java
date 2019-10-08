@@ -38,6 +38,17 @@ public class ScheduledTaskClient {
         final ChannelFuture ch;
         try {
             ch = bootstrap.connect("localhost", 2233).sync();
+            ch.addListener(new ChannelFutureListener() {
+                @Override
+                public void operationComplete(ChannelFuture future) throws Exception {
+                    if(future.isSuccess()) System.out.println(">> Client connect successfully!");
+                    else{
+                        System.out.println(">> Client fail to connect!");
+                        future.cause().printStackTrace();
+                    }
+                }
+
+            });
             ScheduledFuture<?> future=ch.channel().eventLoop().scheduleAtFixedRate(()-> {
                     ch.channel().writeAndFlush((long)System.currentTimeMillis()/1000%1000);
             },0,3, TimeUnit.SECONDS);//3s为周期发送
@@ -48,7 +59,7 @@ public class ScheduledTaskClient {
         } catch (ExecutionException e) {
             e.printStackTrace();
         }finally {
-            clientGroup.shutdownGracefully();
+            clientGroup.shutdownGracefully().syncUninterruptibly();
         }
 
     }
