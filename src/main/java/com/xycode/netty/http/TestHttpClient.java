@@ -6,21 +6,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.http.*;
-import io.netty.handler.ssl.SslContext;
-import io.netty.handler.ssl.SslContextBuilder;
-import io.netty.handler.ssl.SslHandler;
 import io.netty.util.CharsetUtil;
-
-import javax.net.ssl.KeyManagerFactory;
-import javax.net.ssl.SSLEngine;
-import javax.net.ssl.TrustManagerFactory;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.security.KeyStore;
-import java.security.KeyStoreException;
-import java.security.NoSuchAlgorithmException;
-import java.security.UnrecoverableKeyException;
-import java.security.cert.CertificateException;
 
 public class TestHttpClient {
     public static void main(String[] args) {
@@ -35,7 +21,7 @@ public class TestHttpClient {
                             protected void initChannel(SocketChannel ch) throws Exception {//childHandler()处理workerGroup的业务
                                 ChannelPipeline pipeline=ch.pipeline();
                                 //添加ssl加密协议
-                                pipeline.addLast("SSLClient",SSLUtils.createClientSslHandler("client.jks","cNetty",ch));
+                                pipeline.addLast("SSLClient",SSLUtils.createClientSslHandler("client.jks","clientPass",ch));
 
                                 pipeline.addLast("HttpClientCodec",new HttpClientCodec());
                                 pipeline.addLast(new HttpObjectAggregator(204800));//Http消息聚合,否则收到两条消息
