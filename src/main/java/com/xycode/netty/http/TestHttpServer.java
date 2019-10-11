@@ -14,9 +14,9 @@ public class TestHttpServer {
 		//ServerBootstrap是netty启动类,封装了netty的一些配置信息
 		ServerBootstrap serverBootstrap=new ServerBootstrap();
 		serverBootstrap.group(bossGroup,workerGroup)
-		.channel(NioServerSocketChannel.class)//处理bossGroup的业务
-		.childHandler(new TestServerInitializer());//childHandler()处理workerGroup的业务
-		
+                .channel(NioServerSocketChannel.class)//处理bossGroup的业务
+                .childHandler(new TestServerInitializer());//childHandler()处理workerGroup的业务
+
 		ChannelFuture channelFuture=serverBootstrap.bind(2233);
 		try {
 			channelFuture.channel().closeFuture().sync();
@@ -26,7 +26,7 @@ public class TestHttpServer {
 			bossGroup.shutdownGracefully();
 			workerGroup.shutdownGracefully();
 		}
-		
+
 	}
 
 }
