@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f705b77b-44ae-4018-b3e9-36571ceb92f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpUploadHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestServerInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestServerInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/zerocopy/ZeroCopyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/zerocopy/ZeroCopyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Netty in Action.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Netty in Action.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/default/" />
@@ -49,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="316">
+              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#787#1581#0" expanded="true" />
@@ -64,10 +55,32 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1446">
-              <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+            <state relative-caret-position="380">
+              <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+              <folding>
+                <element signature="e#1175#1961#0" expanded="true" />
+                <element signature="e#1960#1961#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,22 +89,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1097">
-              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpUploadHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-703">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="323">
+              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#534#535#0" expanded="true" />
@@ -154,17 +155,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestServerInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/zerocopy/ZeroCopyClient.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpUploadHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="432" />
-    <option name="y" value="123" />
+    <option name="x" value="386" />
+    <option name="y" value="415" />
     <option name="width" value="1605" />
     <option name="height" value="915" />
   </component>
@@ -227,6 +229,15 @@
               <item name="xycode" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
               <item name="transferfFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nettylecture" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nettylecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="xycode" type="462c0819:PsiDirectoryNode" />
+              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -368,7 +379,7 @@
       <workItem from="1570706359384" duration="8103000" />
       <workItem from="1570776864768" duration="163000" />
       <workItem from="1570777526487" duration="7831000" />
-      <workItem from="1570863420854" duration="7732000" />
+      <workItem from="1570863420854" duration="9805000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1570369115716</created>
@@ -381,7 +392,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66657000" />
+    <option name="totallyTimeSpent" value="68730000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,7 +412,7 @@
       <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49832216" visible="true" weight="0.2808311" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2776204" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.20963173" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.20963173" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,7 +421,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32577905" />
       <window_info anchor="bottom" id="Gerrit" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.55382437" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23512748" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067025" side_tool="true" weight="0.34419262" />
       <window_info anchor="bottom" id="Build" order="13" weight="0.23654391" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.24504249" />
@@ -474,20 +485,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/nio/channels/ServerSocketChannel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/channel/Channel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3092">
-          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/jre/lib/rt.jar!/javax/net/ssl/TrustManagerFactory.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -846,18 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#787#1581#0" expanded="true" />
-            <element signature="e#1580#1581#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1446">
@@ -868,24 +853,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpUploadHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#562#563#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1097">
-          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+        <state relative-caret-position="240">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpUploadHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="380">
+          <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
+          <folding>
+            <element signature="e#1175#1961#0" expanded="true" />
+            <element signature="e#1960#1961#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
+            <element signature="e#787#1581#0" expanded="true" />
+            <element signature="e#1580#1581#0" expanded="true" />
           </folding>
         </state>
       </provider>

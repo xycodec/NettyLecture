@@ -31,15 +31,15 @@ public class HttpDownloadHandler extends SimpleChannelInboundHandler<FullHttpReq
                 response.headers().set(HttpHeaderNames.CONTENT_LENGTH, fileLength);
                 response.headers().set(HttpHeaderNames.CONTENT_TYPE, "application/file");
                 response.headers().add(HttpHeaderNames.CONTENT_DISPOSITION, String.format("attachment; filename=\"%s\"", file.getName()));
-                ctx.write(response);
+                ctx.writeAndFlush(response);
 
-                ChannelFuture sendFileFuture = ctx.write(new DefaultFileRegion(raf.getChannel(), 0, fileLength), ctx.newProgressivePromise());
+                ChannelFuture sendFileFuture = ctx.writeAndFlush(new DefaultFileRegion(raf.getChannel(), 0, fileLength), ctx.newProgressivePromise());
                 sendFileFuture.addListener(new ChannelProgressiveFutureListener() {
                     @Override
                     public void operationComplete(ChannelProgressiveFuture future)
                             throws Exception {
                         System.out.println(file.getName()+" transfer complete.");
-                        raf.close();
+                        raf.close();//因为ctx.write是异步的,所以通过Listener来close
                     }
 
                     @Override
