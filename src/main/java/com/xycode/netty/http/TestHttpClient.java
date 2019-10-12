@@ -26,6 +26,7 @@ public class TestHttpClient {
                                 pipeline.addLast("HttpClientCodec",new HttpClientCodec());
                                 pipeline.addLast(new HttpObjectAggregator(204800));//Http消息聚合,否则收到两条消息
                                 //一条是header,一条是content
+                                pipeline.addLast(new HttpContentDecompressor());//对接收的http消息解压
                                 pipeline.addLast(new SimpleChannelInboundHandler<HttpObject>(){
                                     @Override
                                     protected void channelRead0(ChannelHandlerContext ctx, HttpObject msg) throws Exception {

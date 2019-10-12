@@ -25,8 +25,8 @@ public class ZeroCopyClient {
 			total+=transferCnt;
 		}
 		
-		System.out.println("send "+total/1000.0+" KB,"+"cost "+(System.currentTimeMillis()-startTime)+" ms");
-		
+		System.out.println("send "+total/1000.0+"KB,"+"cost "+(System.currentTimeMillis()-startTime)+" ms");
+
 //		System.out.println(fileChannel.size());
 		fileChannel.close();
 	

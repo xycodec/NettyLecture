@@ -25,6 +25,9 @@ dependencies {
     compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.6.1'
     
 	compile group: 'org.apache.zookeeper', name: 'zookeeper', version: '3.5.5'
-    
-    
+
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
+
+
 }
