@@ -42,7 +42,7 @@ public class TestHttpClient {
                                     @Override
                                     public void channelActive(ChannelHandlerContext ctx) throws Exception {
                                         FullHttpRequest request=new DefaultFullHttpRequest
-                                                (HttpVersion.HTTP_1_1,HttpMethod.GET,"wss://localhost:2233/xycode");
+                                                (HttpVersion.HTTP_1_1,HttpMethod.GET,"https://localhost:2233/xycode");
                                         //设置消息头
                                         request.headers().set(HttpHeaderNames.CONTENT_TYPE,"text/plain");
                                         request.headers().set(HttpHeaderNames.CONTENT_LENGTH,request.content().readableBytes());

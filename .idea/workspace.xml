@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f705b77b-44ae-4018-b3e9-36571ceb92f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/ChatServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/ChatServerInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/MyChatServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/TextWebSocketFrameHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Netty in Action.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Netty in Action.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpClient.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/bin/default/" />
@@ -40,47 +45,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/ChatServerInitializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer2.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/MyChatServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#787#1581#0" expanded="true" />
-                <element signature="e#1580#1581#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="34" column="64" selection-start-line="34" selection-start-column="64" selection-end-line="34" selection-end-column="64" />
-              <folding>
-                <element signature="e#1175#1961#0" expanded="true" />
-                <element signature="e#1960#1961#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServerHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+            <state relative-caret-position="301">
+              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -89,15 +83,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpUploadHandler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/chatApp/ChatServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="95">
+              <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -115,6 +104,12 @@
     <findStrings>
       <find>ESTIMATOR</find>
       <find>Encoding</find>
+      <find>ws</find>
+      <find>1</find>
+      <find>dis</find>
+      <find>63342</find>
+      <find>Response</find>
+      <find>send</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -151,7 +146,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/SSLUtils.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestServerInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/zerocopy/ZeroCopyClient.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
@@ -161,12 +155,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpUploadHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/HttpDownloadHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xycode/protobuf/ProtobufServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/WebSocketServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/MyHttpRequestHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/s.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/ChatServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/TextWebSocketFrameHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/HttpRequestHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/MyChatSevertHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/MyChatServertHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/ChatServerInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/index.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/MyChatServerHandler.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="386" />
-    <option name="y" value="415" />
+    <option name="x" value="58" />
+    <option name="y" value="-9" />
     <option name="width" value="1605" />
     <option name="height" value="915" />
   </component>
@@ -228,16 +235,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="xycode" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="transferfFile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nettylecture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nettylecture" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="xycode" type="462c0819:PsiDirectoryNode" />
-              <item name="protobuf" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,18 +247,22 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/xycode/netty/http" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/classes" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xycode\git\nettyLecture\nettylecture\src\main\java\com\xycode\netty\websocket" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.xycode.netty.http" />
       <recent name="com.xycode.netty.scheduled" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xycode\git\nettyLecture\nettylecture\out\production\classes" />
       <recent name="C:\Users\xycode\git\nettyLecture\nettylecture\src\main\java\com\xycode\netty\http" />
     </key>
   </component>
@@ -276,13 +278,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FileServer2">
-    <configuration name="FileClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xycode.netty.transferfFile.FileClient" />
+  <component name="RunManager" selected="Application.ChatServer">
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xycode.netty.websocket.ChatServer" />
       <module name="nettylecture.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.xycode.netty.transferfFile.*" />
+          <option name="PATTERN" value="com.xycode.netty.websocket.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -346,16 +348,16 @@
       <item itemvalue="Application.TestHttpServer" />
       <item itemvalue="Application.TestHttpClient" />
       <item itemvalue="Application.FileServer" />
-      <item itemvalue="Application.FileClient" />
       <item itemvalue="Application.FileServer2" />
+      <item itemvalue="Application.ChatServer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FileServer2" />
-        <item itemvalue="Application.FileServer" />
-        <item itemvalue="Application.FileClient" />
+        <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.TestHttpClient" />
         <item itemvalue="Application.TestHttpServer" />
+        <item itemvalue="Application.FileServer2" />
+        <item itemvalue="Application.FileServer" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +381,7 @@
       <workItem from="1570706359384" duration="8103000" />
       <workItem from="1570776864768" duration="163000" />
       <workItem from="1570777526487" duration="7831000" />
-      <workItem from="1570863420854" duration="9805000" />
+      <workItem from="1570863420854" duration="18692000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1570369115716</created>
@@ -392,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68730000" />
+    <option name="totallyTimeSpent" value="77617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -405,14 +407,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" show_stripe_button="false" sideWeight="0.5016779" side_tool="true" weight="0.25367048" />
       <window_info id="Designer" order="1" />
       <window_info id="Learn" order="2" show_stripe_button="false" weight="0.3297587" />
-      <window_info content_ui="combo" id="Project" order="3" sideWeight="0.49832216" visible="true" weight="0.2808311" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" sideWeight="0.49832216" visible="true" weight="0.27815014" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.2776204" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.20963173" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" visible="true" weight="0.20963173" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -421,10 +424,10 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32577905" />
       <window_info anchor="bottom" id="Gerrit" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.23512748" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.19830029" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067025" side_tool="true" weight="0.34419262" />
       <window_info anchor="bottom" id="Build" order="13" weight="0.23654391" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.24504249" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.24362606" />
       <window_info anchor="right" id="Structure" order="0" sideWeight="0.5016779" weight="0.24932976" />
       <window_info anchor="right" id="Maven" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
@@ -485,122 +488,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/jre/lib/rt.jar!/javax/net/ssl/TrustManagerFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/security/KeyStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12279">
-          <caret line="848" column="40" selection-start-line="848" selection-start-column="40" selection-end-line="848" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/http/SSLUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="133">
-            <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/dictionaries/xycode.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.project">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.classpath">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/jre/lib/rt.jar!/sun/net/www/http/ChunkedInputStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="292" column="11" selection-start-line="292" selection-start-column="11" selection-end-line="292" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/zerocopy/NonZeroServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestServerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/stream/ChunkedFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/zerocopy/ZeroCopyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/zerocopy/ZeroCopyClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/stream/ChunkedWriteHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="76" column="11" selection-start-line="76" selection-start-column="11" selection-end-line="76" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/util/internal/PlatformDependent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
@@ -634,13 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/chatApp/ChatServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -680,16 +560,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="26" column="74" selection-start-line="26" selection-start-column="74" selection-end-line="26" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -741,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/HttpMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/handler/stickyPacket/TestServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -783,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/HttpHeaders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/DefaultFullHttpResponse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -808,18 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="747" column="19" selection-start-line="747" selection-start-column="19" selection-end-line="747" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1150#3977#0" expanded="true" />
-            <element signature="e#3976#3977#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,14 +737,200 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="60" column="117" lean-forward="true" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="41" column="45" lean-forward="true" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/http/TestHttpServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/transferfFile/FileServer2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="76">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#787#1581#0" expanded="true" />
             <element signature="e#1580#1581#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/HttpHeaderNames.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/HttpRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/HttpHeaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="1080" column="26" selection-start-line="1080" selection-start-column="26" selection-end-line="1080" selection-end-column="26" />
+          <folding>
+            <element signature="e#16401#16402#0" expanded="true" />
+            <element signature="e#16453#16454#0" expanded="true" />
+            <element signature="e#36161#36162#0" expanded="true" />
+            <element signature="e#36223#36224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/HttpMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/classes/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/WebSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_221/src.zip!/java/time/LocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="178" column="32" selection-start-line="178" selection-start-column="32" selection-end-line="178" selection-end-column="32" />
+          <folding>
+            <element signature="e#6863#6864#0" expanded="true" />
+            <element signature="e#6916#6917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/util/concurrent/GlobalEventExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="45" column="61" lean-forward="true" selection-start-line="45" selection-start-column="61" selection-end-line="46" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/websocketx/TextWebSocketFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="117" column="30" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/ChatServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/handler/codec/http/websocketx/WebSocketServerProtocolHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="67" column="8" selection-start-line="67" selection-start-column="8" selection-end-line="67" selection-end-column="8" />
+          <folding>
+            <element signature="e#4482#4483#0" expanded="true" />
+            <element signature="e#4547#4548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/channel/ChannelInboundHandlerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="115" column="16" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.39.Final/4d82e28a78ab350ce06611c06cbfe07ed6f1825f/netty-all-4.1.39.Final-sources.jar!/io/netty/channel/group/ChannelGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="177" column="38" lean-forward="true" selection-start-line="177" selection-start-column="38" selection-end-line="177" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/chatApp/ChatServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="13" column="84" selection-start-line="13" selection-start-column="84" selection-end-line="13" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/TextWebSocketFrameHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="79" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="70" column="7" lean-forward="true" selection-start-line="70" selection-start-column="7" selection-end-line="70" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/ChatServerInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xycode/netty/websocket/MyChatServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
