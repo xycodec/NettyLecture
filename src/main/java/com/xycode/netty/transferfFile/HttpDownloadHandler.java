@@ -33,6 +33,7 @@ public class HttpDownloadHandler extends SimpleChannelInboundHandler<FullHttpReq
                 response.headers().add(HttpHeaderNames.CONTENT_DISPOSITION, String.format("attachment; filename=\"%s\"", file.getName()));
                 ctx.writeAndFlush(response);
 
+                //FileRegion
                 ChannelFuture sendFileFuture = ctx.writeAndFlush(new DefaultFileRegion(raf.getChannel(), 0, fileLength), ctx.newProgressivePromise());
                 sendFileFuture.addListener(new ChannelProgressiveFutureListener() {
                     @Override
