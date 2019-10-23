@@ -14,7 +14,11 @@ plugins {
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+//    jcenter()
+    mavenLocal() //先从本地开始找jar包,找不到再从远端仓库找
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter'}
+
 }
 
 dependencies {

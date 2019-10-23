@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="901dbae9-a8c0-43f7-99c8-55cfe22432ac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/netty/udp/UDPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/udp/UDPServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +19,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -46,10 +46,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GroovyConsoleState">
+    <option name="list">
+      <list>
+        <Entry>
+          <option name="url" value="file://$APPLICATION_CONFIG_DIR$/consoles/groovy/groovy_console_1.groovy" />
+          <option name="moduleName" value="nettylecture" />
+          <option name="title" value="nettylecture (Bundled Groovy 2.4.17)" />
+        </Entry>
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1SY77DXP8xkI1NaU5YRLlAyyzV9" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="settings.gerrit" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -63,26 +74,51 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.test_1">
-    <configuration name="Tests in 'nettylecture'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.nettylecture [dependencies]">
+    <configuration name="nettylecture [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests *" />
+        <option name="scriptParameters" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
+            <option value="dependencies" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="&lt;default&gt;" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nettylecture.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nettylecture" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nettylecture.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="nettylecture.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="nettylecture" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="test_1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nettylecture.test" />
@@ -101,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test_1.f1" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="test_2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nettylecture.test" />
       <extension name="coverage">
         <pattern>
@@ -110,27 +146,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="nettylecture" />
-      <option name="MAIN_CLASS_NAME" value="nettylecture.test_1" />
-      <option name="METHOD_NAME" value="f1" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_1.f2" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nettylecture.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nettylecture.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nettylecture" />
-      <option name="MAIN_CLASS_NAME" value="nettylecture.test_1" />
-      <option name="METHOD_NAME" value="f2" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="nettylecture.test_2" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -139,10 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.nettylecture [dependencies]" />
+        <item itemvalue="TestNG.test_2" />
+        <item itemvalue="TestNG.&lt;default&gt;" />
+        <item itemvalue="TestNG.nettylecture" />
         <item itemvalue="TestNG.test_1" />
-        <item itemvalue="TestNG.test_1.f2" />
-        <item itemvalue="TestNG.test_1.f1" />
-        <item itemvalue="Gradle.Tests in 'nettylecture'" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +178,7 @@
       <workItem from="1571742975127" duration="974000" />
       <workItem from="1571744678193" duration="2929000" />
       <workItem from="1571815957698" duration="3757000" />
-      <workItem from="1571823478713" duration="1312000" />
+      <workItem from="1571823478713" duration="5470000" />
     </task>
     <servers />
   </component>
