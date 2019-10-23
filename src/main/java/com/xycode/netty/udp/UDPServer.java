@@ -12,9 +12,9 @@ import java.nio.charset.Charset;
 public class UDPServer {
     public static void main(String[] args) {
         Bootstrap bootstrap=new Bootstrap();
-        EventLoopGroup servertGroup=new NioEventLoopGroup();
+        EventLoopGroup serverGroup=new NioEventLoopGroup();
         bootstrap
-                .group(servertGroup)
+                .group(serverGroup)
                 .channel(NioDatagramChannel.class)
                 .handler(
                         new SimpleChannelInboundHandler<DatagramPacket>() {
@@ -43,7 +43,7 @@ public class UDPServer {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }finally {
-            servertGroup.shutdownGracefully().syncUninterruptibly();
+            serverGroup.shutdownGracefully().syncUninterruptibly();
         }
 
 
