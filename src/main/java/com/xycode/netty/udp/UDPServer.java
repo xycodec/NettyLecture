@@ -1,13 +1,12 @@
 package com.xycode.netty.udp;
 
 import io.netty.bootstrap.Bootstrap;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.DatagramPacket;
 import io.netty.channel.socket.nio.NioDatagramChannel;
-
-import java.net.InetSocketAddress;
-import java.nio.charset.Charset;
+import io.netty.util.CharsetUtil;
 
 public class UDPServer {
     public static void main(String[] args) {
@@ -16,36 +15,34 @@ public class UDPServer {
         bootstrap
                 .group(serverGroup)
                 .channel(NioDatagramChannel.class)
+                //.option(ChannelOption.SO_BROADCAST, true)
                 .handler(
-                        new SimpleChannelInboundHandler<DatagramPacket>() {
+                        new ChannelInitializer<NioDatagramChannel>() {
                             @Override
-                            protected void channelRead0(ChannelHandlerContext ctx, DatagramPacket msg) throws Exception {
-
-                                System.out.println("[server]recv: "+msg.content().toString(Charset.forName("utf-8")));
+                            protected void initChannel(NioDatagramChannel ch) throws Exception {
+                                ChannelPipeline pipeline=ch.pipeline();
+                                pipeline.addLast(new SimpleChannelInboundHandler<DatagramPacket>() {
+                                    @Override
+                                    protected void channelRead0(ChannelHandlerContext ctx, DatagramPacket msg) throws Exception {
+                                        System.out.println("[server] recv: "+msg.content().toString(CharsetUtil.UTF_8)+", from "+msg.sender());
+                                        ctx.writeAndFlush(new DatagramPacket(
+                                                Unpooled.copiedBuffer("this is a echo from server!".getBytes()),
+                                                msg.sender()));
+                                    }
+                                });
                             }
                         }
+
                 );
-        //server «bind()
-        ChannelFuture future=bootstrap.bind(new InetSocketAddress("localhost",2233));
-        future.addListener(new ChannelFutureListener() {
-            @Override
-            public void operationComplete(ChannelFuture future) throws Exception {
-                if(future.isSuccess()) System.out.println("[server]Channel bound!");
-                else{
-                    System.err.println("[server]Bind attempt failed");
-                    future.cause().printStackTrace();
-                }
-            }
-        });
+
+        ChannelFuture future=bootstrap.bind(2233);
         try {
-            future.sync();
             future.channel().closeFuture().sync();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }finally {
             serverGroup.shutdownGracefully().syncUninterruptibly();
         }
-
 
     }
 }

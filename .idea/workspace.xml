@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="901dbae9-a8c0-43f7-99c8-55cfe22432ac" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/netty/udp/UDPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/udp/UDPClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/xycode/netty/udp/UDPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/xycode/netty/udp/UDPServer.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +75,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.nettylecture [dependencies]">
+  <component name="RunManager" selected="Application.UDPClient">
+    <configuration name="UDPClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xycode.netty.udp.UDPClient" />
+      <module name="nettylecture.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xycode.netty.udp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UDPServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.xycode.netty.udp.UDPServer" />
+      <module name="nettylecture.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xycode.netty.udp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="nettylecture [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -104,39 +131,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="nettylecture" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nettylecture.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nettylecture.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nettylecture" />
-      <option name="TEST_OBJECT" value="PACKAGE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test_1" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nettylecture.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="nettylecture.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="nettylecture" />
-      <option name="MAIN_CLASS_NAME" value="nettylecture.test_1" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="test_2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nettylecture.test" />
       <extension name="coverage">
@@ -154,13 +148,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.UDPClient" />
+      <item itemvalue="Application.UDPServer" />
+      <item itemvalue="Gradle.nettylecture [dependencies]" />
+      <item itemvalue="TestNG.&lt;default&gt;" />
+      <item itemvalue="TestNG.test_2" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UDPClient" />
+        <item itemvalue="Application.UDPServer" />
         <item itemvalue="Gradle.nettylecture [dependencies]" />
         <item itemvalue="TestNG.test_2" />
         <item itemvalue="TestNG.&lt;default&gt;" />
-        <item itemvalue="TestNG.nettylecture" />
-        <item itemvalue="TestNG.test_1" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +179,8 @@
       <workItem from="1571742975127" duration="974000" />
       <workItem from="1571744678193" duration="2929000" />
       <workItem from="1571815957698" duration="3757000" />
-      <workItem from="1571823478713" duration="5470000" />
+      <workItem from="1571823478713" duration="6189000" />
+      <workItem from="1571921656636" duration="3992000" />
     </task>
     <servers />
   </component>

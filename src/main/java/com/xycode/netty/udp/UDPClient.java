@@ -4,8 +4,10 @@ import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.DatagramChannel;
 import io.netty.channel.socket.DatagramPacket;
 import io.netty.channel.socket.nio.NioDatagramChannel;
+import io.netty.util.CharsetUtil;
 
 import java.net.InetSocketAddress;
 import java.nio.charset.Charset;
@@ -17,36 +19,43 @@ public class UDPClient {
         bootstrap
                 .group(clientGroup)
                 .channel(NioDatagramChannel.class)
-                .handler(
-                        new SimpleChannelInboundHandler<DatagramPacket>() {
+                //.option(ChannelOption.SO_BROADCAST, true)
+                .handler(new ChannelInitializer<DatagramChannel>() {
+                    @Override
+                    protected void initChannel(DatagramChannel ch) throws Exception {
+                        ChannelPipeline pipeline=ch.pipeline();
+                        pipeline.addLast(new SimpleChannelInboundHandler<DatagramPacket>() {
                             @Override
                             protected void channelRead0(ChannelHandlerContext ctx, DatagramPacket msg) throws Exception {
-                                System.out.println("[client]recv: "+msg.content());
+                                System.out.println("[client] recv: "+msg.content().toString(CharsetUtil.UTF_8)+", from "+msg.sender());
                             }
 
                             @Override
                             public void channelActive(ChannelHandlerContext ctx) throws Exception {
-                                System.out.println("[client]: "+ctx.channel().remoteAddress()+" connected!");
-                                DatagramPacket msg=new DatagramPacket(Unpooled.copiedBuffer("hello,this a echo from client!"
-                                        .getBytes(Charset.forName("utf-8"))),
-                                        (InetSocketAddress) ctx.channel().remoteAddress());
-
+                                DatagramPacket msg=new DatagramPacket(Unpooled.copiedBuffer("hello, this a echo from client!"
+                                        .getBytes(CharsetUtil.UTF_8)),
+                                        new InetSocketAddress("localhost",2233));
                                 ctx.writeAndFlush(msg);
                             }
-                        }
-                );
-        //client是connect()
-        ChannelFuture future=bootstrap.connect(new InetSocketAddress("localhost",2233));
+                        });
+                    }
+                });
+
+        ChannelFuture future=bootstrap.bind(0);//这里端口号填0,实际上表示随机分配端口号
         future.addListener(new ChannelFutureListener() {
             @Override
             public void operationComplete(ChannelFuture future) throws Exception {
-                if(future.isSuccess()) System.out.println("[client]Channel bound!");
+                if(future.isSuccess()) System.out.println("[client]: Channel bound!");
                 else{
-                    System.err.println("[client]Bind attempt failed");
+                    System.err.println("[client]: Bind attempt failed");
                     future.cause().printStackTrace();
                 }
             }
         });
+        DatagramPacket msg=new DatagramPacket(Unpooled.copiedBuffer("hello, this a echo from client!"
+                .getBytes(CharsetUtil.UTF_8)),
+                new InetSocketAddress("localhost",2233));
+        future.channel().writeAndFlush(msg);
         try {
             future.sync();
             future.channel().closeFuture().sync();
