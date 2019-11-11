@@ -14,6 +14,7 @@ import io.netty.handler.stream.ChunkedStream;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.net.URI;
+@Deprecated
 public class FileServer {
     public static String getFilecodec(String fileName) throws Exception {
         BufferedInputStream bin = new BufferedInputStream(new FileInputStream(fileName));

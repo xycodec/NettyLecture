@@ -50,7 +50,7 @@ public class ScheduledTaskClient {
 
             });
             ScheduledFuture<?> future=ch.channel().eventLoop().scheduleAtFixedRate(()-> {
-                    ch.channel().writeAndFlush((long)System.currentTimeMillis()/1000%1000);
+                ch.channel().writeAndFlush((long)System.currentTimeMillis()/1000%1000);
             },0,3, TimeUnit.SECONDS);//3s为周期发送
             future.get();
             ch.channel().closeFuture().sync();//阻塞等待关闭时间到来
@@ -60,7 +60,7 @@ public class ScheduledTaskClient {
             e.printStackTrace();
         }finally {
             clientGroup.shutdownGracefully().syncUninterruptibly();
-        }
+    }
 
     }
 }

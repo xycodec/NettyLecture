@@ -30,13 +30,6 @@ public class UDPClient {
                                 System.out.println("[client] recv: "+msg.content().toString(CharsetUtil.UTF_8)+", from "+msg.sender());
                             }
 
-                            @Override
-                            public void channelActive(ChannelHandlerContext ctx) throws Exception {
-                                DatagramPacket msg=new DatagramPacket(Unpooled.copiedBuffer("hello, this a echo from client!"
-                                        .getBytes(CharsetUtil.UTF_8)),
-                                        new InetSocketAddress("localhost",2233));
-                                ctx.writeAndFlush(msg);
-                            }
                         });
                     }
                 });
@@ -53,6 +46,10 @@ public class UDPClient {
             }
         });
         DatagramPacket msg=new DatagramPacket(Unpooled.copiedBuffer("hello, this a echo from client!"
+                .getBytes(CharsetUtil.UTF_8)),
+                new InetSocketAddress("localhost",2233));
+        future.channel().writeAndFlush(msg);
+        msg=new DatagramPacket(Unpooled.copiedBuffer("wait"
                 .getBytes(CharsetUtil.UTF_8)),
                 new InetSocketAddress("localhost",2233));
         future.channel().writeAndFlush(msg);

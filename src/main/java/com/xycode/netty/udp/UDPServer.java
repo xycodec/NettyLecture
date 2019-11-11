@@ -8,6 +8,8 @@ import io.netty.channel.socket.DatagramPacket;
 import io.netty.channel.socket.nio.NioDatagramChannel;
 import io.netty.util.CharsetUtil;
 
+import java.util.concurrent.TimeUnit;
+
 public class UDPServer {
     public static void main(String[] args) {
         Bootstrap bootstrap=new Bootstrap();
@@ -24,6 +26,11 @@ public class UDPServer {
                                 pipeline.addLast(new SimpleChannelInboundHandler<DatagramPacket>() {
                                     @Override
                                     protected void channelRead0(ChannelHandlerContext ctx, DatagramPacket msg) throws Exception {
+                                        String s=msg.content().toString(CharsetUtil.UTF_8);
+                                        if(s.equals("wait")){
+                                            System.out.println("waiting...");
+                                            TimeUnit.SECONDS.sleep(30);
+                                        }
                                         System.out.println("[server] recv: "+msg.content().toString(CharsetUtil.UTF_8)+", from "+msg.sender());
                                         ctx.writeAndFlush(new DatagramPacket(
                                                 Unpooled.copiedBuffer("this is a echo from server!".getBytes()),
